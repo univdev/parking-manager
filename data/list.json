@@ -1,0 +1,13 @@
+{
+"DESCRIPTION" : {"CARNAME":"주차장명","CARCNT":"정기권대수(소형)","BASE_YM":"기준년월","CARNUM":"정기권대수(대형)","total":"현제판매량"},
+"DATA" : [
+{"CARNAME":"개화산역","CARCNT":365,"BASE_YM":"2016-07-1","CARNUM":0,"total":365},
+{"CARNAME":"개화역","CARCNT":300,"BASE_YM":"2016-06-5","CARNUM":0,"total":240},
+{"CARNAME":"구파발역","CARCNT":220,"BASE_YM":"2016-06-8","CARNUM":10,"total":200},
+{"CARNAME":"남부여성","CARCNT":125,"BASE_YM":"2016-07-15","CARNUM":10,"total":125},
+{"CARNAME":"대림노외","CARCNT":90,"BASE_YM":"2016-07-22","CARNUM":0,"total":90},
+{"CARNAME":"도봉산역","CARCNT":280,"BASE_YM":"2016-06-25","CARNUM":5,"total":220},
+{"CARNAME":"동대문","CARCNT":1031,"BASE_YM":"2016-07-25","CARNUM":10,"total":851},
+{"CARNAME":"마포유수지","CARCNT":153,"BASE_YM":"2016-06-23","CARNUM":0,"total":200}
+]
+}

@@ -1,0 +1,34 @@
+/* CSS Document */
+
+.selected{background-color:rgba(255,51,51,0.5);color:#fafafa;}
+.selected:hover{background-color:rgba(255,51,51,0.7) !important;}
+
+.fail {
+	background-image: url(../img/upload_buttons_error.png) !important;
+}
+.success {
+	background-image: url(../img/upload_buttons_complete.png) !important;
+}
+
+table.table_list {
+	border-collapse: collapse;
+}
+table.table_list tbody tr {
+	max-height: 50px;
+}
+table.table_list tbody tr.loaded span {
+	animation: up 1s both;
+	padding: 0;
+}
+
+@keyframes up {
+	from {
+		top: 80px;
+		opacity: 0;
+	}
+
+	to {
+		top: 0;
+		opacity: 1;
+	}
+}

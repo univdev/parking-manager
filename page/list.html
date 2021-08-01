@@ -1,0 +1,104 @@
+<!doctype html>
+<html><head>
+<meta charset="utf-8">
+<title>LIST</title>
+<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+<link rel="stylesheet" type="text/css" href="../css/layout.css"/>
+<link rel="stylesheet" type="text/css" href="../css/page.css">
+<script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="../page/list.js"></script>
+</head>
+    <body>
+    	<style>
+			html,body{
+				background-image:url(../img/cover.png);
+				background-attachment:fixed;
+				background-repeat:no-repeat;
+				background-size:cover;	
+			}
+
+			.list_checked{width:20px;height:20px;border:1px solid #ddd;background-color:#fafafa;}
+			.list_box{height:auto;padding:20px 0;}
+				.list_box > .list_wrap{height:auto;overflow:hidden;}
+					.list_box > .list_wrap > table{width:100%;height:auto;}
+						.list_box > .list_wrap > table > thead > tr{width:100%;height:50px;font-size:1.1em;background-color:#3394cc;color:#fafafa;}
+							.list_box > .list_wrap > table > thead > tr > th{border-left:1px solid #0A81AD;cursor:default;}
+							.list_box > .list_wrap > table > thead > tr > th:hover{background-color:#4FB8F7;}
+							.list_box > .list_wrap > table > thead > tr > th:first-child{border:0;}
+						.list_box > .list_wrap > table > tbody > tr{width:100%;height:50px;padding:4px 0;border-top:1px solid #ddd;text-align:center;}
+						.list_box > .list_wrap > table > tbody > tr:hover{background-color:#f4f4f4;}
+						.list_box > .list_wrap > table > tbody > tr:first-child{border:0;}
+			.canvas_box{height:500px;padding:30px 0;}			
+				.canvas_box > .canvas_wrap{height:100%;}	
+					.canvas_box > .canvas_wrap > canvas{width:100%;height:100%;background-color:#f3f3f3;}
+								
+			.button_box{height:auto;padding:30px 0;}
+				.button_box > .button_wrap{height:auto;overflow:hidden;}
+					.button_box > .button_wrap > div{float:left;width:50%;height:40px;padding:0 30px;}
+						.button_box > .button_wrap > div > button{border:1px solid #ddd;width:100%;height:100%;color:#fafafa;}
+						.button_box > .button_wrap > .lefts > button{background-color:#F33;}
+						.button_box > .button_wrap > .rights > button{background-color:#3394cc;cursor:pointer;
+							border-bottom:8px solid #067D97;
+							border-left:2px solid #067D97;
+							border-right:2px solid #067D97;
+							text-shadow:0 5px 3px rgba(51,51,51,0.5);
+						}
+						.button_box > .button_wrap > .rights > button:hover{background-color:#F33;
+							border-left:2px solid #99060A;
+							border-right:2px solid #99060A;
+							border-bottom:8px solid #99060A;}
+						.button_box > .button_wrap > .rights > button:active{
+							border-top:8px solid #99060A;
+							border-left:2px solid #99060A;
+							border-right:2px solid #99060A;
+							border-bottom:0;
+						}
+						
+        </style>
+
+
+
+
+
+		<div class="qb canvas_box">
+        	<div class="qw canvas_wrap">
+            	<canvas id="canvas_chart" class="canvas_chart" width="1000px" height="500px">지원하지않는 브라우저입니다.</canvas>
+            </div>
+        </div>
+
+
+		<div class="qb list_box">
+        	<div class="qw list_wrap">
+            	<table class="table_list">
+                	<thead>
+                    	<tr>
+                        	<th id="th_check" class="th_line">#</th>
+                        	<th id="th_date" class="th_line">기준년월</th>
+                        	<th id="th_name" class="th_line">주차장명</th>
+                            <th id="th_small" class="th_line">정기권대수[소형]</th>
+                            <th id="th_big" class="th_line">정기권대수[대형]</th>
+                            <th id="th_count" class="th_line">전체 현재판매량</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        	<td colspan="6" class="no_data">데이터를 불러와 주십시요.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <div class="qb button_box">
+        	<div class="qw button_wrap">
+            	<div class="lefts">
+                	
+                </div>
+                <div class="rights">
+                	<button class="download_btn" id="download_btn">선택된 목록 다운로드</button>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+</html>

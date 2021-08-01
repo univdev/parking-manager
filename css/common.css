@@ -1,0 +1,21 @@
+/* CSS Document */
+
+*{
+	padding:0;margin:0;
+	position:relative;	
+	box-sizing:border-box;
+	font-size:0.97em;
+	letter-spacing:-1px;
+	font-family:"맑은 고딕","굴림","돋움","arial";
+}
+img{
+	max-width:100%;display:block;border:0;outline:0;background:none;
+}
+	
+html,body{
+	width:100%;height:100%;
+	overflow:auto;	
+}
+ul,li{list-style:none;}
+a{text-decoration:none;}
+table{border-collapse:collapse;}
